@@ -36,6 +36,7 @@
     error 404 when no pokemon is found
     
 - http://pokemon-db-123.herokuapp.com/pokemon/count
+
   returns the total amount of pokemon in the database
 
 ## License
