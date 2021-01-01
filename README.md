@@ -20,8 +20,8 @@ https://pokemon-db-123.herokuapp.com/pokemons/type/{type}
 type = name of type ex) Water, Fire, Grass etc 
 returns all the pokemons with matching type 
 
-#License
-Copyright [yyyy] [name of copyright owner]
+## License
+Copyright [2020] [Maytic]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
