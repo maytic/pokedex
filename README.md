@@ -1,11 +1,11 @@
-# pokemon-db
 
+# pokedex
+
+![](https://storage.googleapis.com/staging.pokemondatabase-86124.appspot.com/github%20images/pokedex.png?raw=true)
 
 ## Tech/framework used
 <b>Built with</b>
-- Springboot
-- Springboot H2
-- Springboot Web
+- Picasso
 - Java Amazon Correto
 
 ## API Reference
