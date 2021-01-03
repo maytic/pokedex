@@ -50,7 +50,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView14"
+                        android:id="@+id/results_id"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
@@ -137,6 +137,12 @@
 
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF" />
 
 </androidx.cardview.widget.CardView>
