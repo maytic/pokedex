@@ -18,13 +18,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.maytic.pokedex.Pokemon.PokemonServices;
+import com.maytic.pokedex.Results.ResultsActivity;
 import com.maytic.pokedex.Results.ResultsAsync;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -72,9 +72,7 @@ public class MainActivity extends AppCompatActivity implements MainInterface {
                 resultsAsync.mainInterface = MainActivity.this;
                 resultsAsync.execute(query);
 
-                //Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
-                //intent.putExtra("query", query);
-                //startActivity(intent);
+
 
                 return false;
             }
@@ -86,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements MainInterface {
         }); // end search view listener
 
 
-    }
+    } // end of main
 
     /**
      * gets pokemon by amount requested
@@ -256,10 +254,10 @@ public class MainActivity extends AppCompatActivity implements MainInterface {
 
     @Override
     public void onResultsFound(JSONArray pokemons) {
-        int size = pokemons.length();
+        //int size = pokemons.length();
 
-        for (int i = 0; i < size; i++){
-
-        }
+        Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
+        intent.putExtra("query", pokemons.toString());
+        startActivity(intent);
     }
 }
